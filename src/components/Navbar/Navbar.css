@@ -1,0 +1,15 @@
+.textNavbar{
+    display: flex;
+    font-size:30px; 
+    margin-top: 18px;
+    margin-left:15px;
+}
+.menuNavbar{
+  display: flex;
+  margin-left:300px;
+}
+
+.iconNavbar{
+  width:70px;
+  margin-top: 10px;
+}

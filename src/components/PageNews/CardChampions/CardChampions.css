@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Staatliches&display=swap');
+.titleCardsNews{
+    align-items: center;
+    margin-top:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    color: #050505;
+    font-size:80px;
+}
+.titleSection{
+ display: flex;
+margin-left: 10px;
+}
+
+.iconChampions{
+    width:96px;
+
+}
+.sectionChampions{
+    color: #050505;
+    font-size: 45px;
+    font-family: 'Staatliches', cursive;
+    margin-left: 15px;
+}
+.cointainerCardNews{
+    display: flex;
+    gap:25px;
+    margin-top:30px;
+    margin-left:10px;
+    margin-right:10px;
+}
