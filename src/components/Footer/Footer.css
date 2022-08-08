@@ -1,0 +1,13 @@
+.footer{
+    background: #04071D;
+    padding-bottom: 0.1px;
+}
+.contenedor-footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background: #C2C6E4;
+}

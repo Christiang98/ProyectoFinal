@@ -1,9 +1,17 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import PageNews from './components/PageNews/PageNews'
+import { PageHome } from './Pages/PageHome'
+import MyClub from "./Pages/PageMyClub"
+import PageNews from './Pages/PageNews'
+
 function App() {
   return (
     <>
-   <PageNews/>
+      <Routes>
+        <Route path='/' element={<PageHome />} />
+        <Route path='news' element={<PageNews />} />
+        <Route path='myClub' element={<MyClub />} />
+      </Routes>
     </>
   )
 }

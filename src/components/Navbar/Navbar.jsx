@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import "./Navbar.css"
 import { Tab, Tabs } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -16,9 +17,9 @@ export default function Navbar() {
                     </Typography>
                     <h1 className='textNavbar'>Footdev</h1>
                     <Tabs className='menuNavbar'>
-                        <Tab style={{color:"white",fontSize:"30px"}} label="Inicio"/>
-                        <Tab  style={{color:"white",fontSize:"30px"}}label="Noticias"/>
-                        <Tab  style={{color:"white",fontSize:"30px"}}label="Tu Club"/>
+                        <NavLink to="/"><Tab style={{color:"white",fontSize:"30px"}} label="Inicio"/></NavLink>
+                       <NavLink to="/news"><Tab  style={{color:"white",fontSize:"30px"}}label="Noticias"/></NavLink>
+                       <NavLink to="/myClub"><Tab  style={{color:"white",fontSize:"30px"}}label="Tu Club"/></NavLink>
                         <Tab  style={{color:"white",fontSize:"30px"}}label="Equipos"/>
                     </Tabs>
                     </Toolbar>
