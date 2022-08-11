@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Staatliches&display=swap');
+
+body{
+    background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.sectionInicio{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    margin-top: 10px;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    color: aliceblue;
+    justify-content: center;
+}
+
+.sectionSubtitle{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+    font-size: 25px;
+    border: 2px solid #060e4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    color: aliceblue;
+    justify-content: center;
+}
+
+.containerIcons{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconChampions{
+    width:96px;
+    margin-left: 100px;
+    margin-bottom: 110px;
+    margin-right: 100px;
+}
+
+.iconInternational{
+    width:96px;
+    margin-left: 100px;
+    margin-bottom: 110px;
+    margin-right: 100px;
+}
+
+.iconLibertadores{
+    width:96px;
+    margin-left: 100px;
+    margin-bottom: 110px;
+    margin-right: 100px;
+}
+
+.iconLocal{
+    width:96px;
+    margin-left: 100px;
+    margin-bottom: 110px;
+    margin-right: 100px;
+}
+
+.containerButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.PageButton{
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 35px;
+    font-family: 'Staatliches', cursive;
+
+}

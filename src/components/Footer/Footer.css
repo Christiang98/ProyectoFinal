@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Staatliches&display=swap');
+
 .footer{
     background: #04071D;
     padding-bottom: 0.1px;
@@ -6,8 +8,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Staatliches', cursive;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background: #C2C6E4;
+    padding-top: 26px;
+    padding-bottom: 0px;
+    background: #AFE43E;
+}
+.contacto-creadores{
+}
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /*sacarlo*/
+    text-align: center;
+    color: #060e4a;
 }
