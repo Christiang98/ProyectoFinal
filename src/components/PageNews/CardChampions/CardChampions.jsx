@@ -9,11 +9,13 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
+import { green, red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import AddToHomeScreenIcon from '@mui/icons-material/AddToHomeScreen';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import champions from "../../../assets/img/champions.png"
+import Logo from "../../../assets/img/Logo.png"
 import "./CardChampions.css";
 
 const ExpandMore = styled((props) => {
@@ -38,7 +40,7 @@ export default function CardChampions() {
     <>
       <h1 className='titleCardsNews'>Ultimas noticias</h1>
       <div className='titleSection'>
-        <img className='iconChampions' src='https://assets.stickpng.com/images/5842fe0ea6515b1e0ad75b3c.png' />
+        <img className='iconChampions' src={champions} />
         <h3 className='sectionChampions'>Champions League</h3>
       </div>
 
@@ -47,8 +49,8 @@ export default function CardChampions() {
         <Card sx={{ maxWidth: 370 }}>
           <CardHeader
             avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+              <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                <img src={Logo} className="logocard" />
               </Avatar>
             }
             title="La Champions League más cara!"
@@ -56,7 +58,7 @@ export default function CardChampions() {
           />
           <CardMedia
             component="img"
-            height="250"
+            height="260"
             image="https://img.asmedia.epimg.net/resizer/ARf9txUYhzgyWhxnn-PwiBawrz0=/736x414/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/U2GF23DXQJYOPXRYBBZRQZU264.jpg"
             alt="Paella dish"
           />
@@ -121,8 +123,8 @@ export default function CardChampions() {
         <Card sx={{ maxWidth: 370 }}>
           <CardHeader
             avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+              <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                <img src={Logo} className="logocard" />
               </Avatar>
             }
             title=" Habra VAR en la tercera ronda"
@@ -130,7 +132,7 @@ export default function CardChampions() {
           />
           <CardMedia
             component="img"
-            height="250"
+            height="260"
             image="https://editorial.uefa.com/resources/0277-15bd55398d5c-e3c572704173-1000/format/wide1/uefa_champions_league_2022_23_preliminary_round_draw.jpeg?imwidth=2048"
             alt="Paella dish"
           />
@@ -189,11 +191,11 @@ export default function CardChampions() {
         {/* SECOND CARD */}
 
         {/* THIRD CARD */}
-        <Card sx={{ maxWidth: 370,maxHeight:800}}>
+        <Card sx={{ maxWidth: 370, maxHeight: 800 }}>
           <CardHeader
             avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+              <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                <img src={Logo} className="logocard" />
               </Avatar>
             }
             title="La Champions League tiene nuevo formato"
@@ -201,7 +203,7 @@ export default function CardChampions() {
           />
           <CardMedia
             component="img"
-            height="250"
+            height="260"
             image="https://tn.com.ar/resizer/gGv7AVSBbG867WMrEd2DeVXinxc=/1440x0/smart/cloudfront-us-east-1.images.arcpublishing.com/artear/DUZBIHF2OJDYVJU6CWMEXUN53Y.jpg"
             alt="Paella dish"
           />
@@ -211,20 +213,20 @@ export default function CardChampions() {
               Habrá una única tabla de posiciones. Los ochos primeros equipos al término de la primera fase se clasificarán a octavos de final, mientras que los que ocupen los puestos del 9 al 24 pasarán por un repechaje con el formato de eliminatoria con partidos de ida y vuelta.
             </Typography>
           </CardContent>
-           <IconButton aria-label="add to favorites">
-              <FavoriteIcon />
-            </IconButton>
-            <IconButton aria-label="share">
-              <ShareIcon />
-            </IconButton>
-          </Card>
+          <IconButton aria-label="add to favorites">
+            <FavoriteIcon />
+          </IconButton>
+          <IconButton aria-label="share">
+            <ShareIcon />
+          </IconButton>
+        </Card>
         {/* THIRD CARD */}
         {/* CUARTA CARTA */}
-        <Card sx={{ maxWidth: 370,maxHeight:800}}>
+        <Card sx={{ maxWidth: 370, maxHeight: 800 }}>
           <CardHeader
             avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+              <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                <img src={Logo} className="logocard" />
               </Avatar>
             }
             title="Fuera de juego semiautomatico"
@@ -232,15 +234,15 @@ export default function CardChampions() {
           />
           <CardMedia
             component="img"
-            height="250"
+            height="260"
             image="https://www.filo.news/__export/1659633730874/sites/claro/img/2022/08/04/var_1.jpg_1956802537.jpg"
             alt="Paella dish"
           />
           <CardContent>
             <Typography variant="body2" color="black">
               a UEFA anunció que el fuera de juego semiautomático se utilizará el 10 de agosto en la Supercopa y en la fase de grupos de la Champions League. De esta manera, servirá como una prueba para lo que será el Mundial de Qatar 2022, en el cual se busca implementar esta tecnología.
-            En ese sentido, el partido entre Real Madrid y Eintracht Frankfurt, campeones de Europa, marcará el debut de esta herramienta tecnológica destinada a acelerar y fiabilizar las decisiones arbitrales.
-             La tecnología, según NA, permite establecer en todo momento la posición de los jugadores y del balón, facilitando la detención de las jugadas en fuera de juego, sin reemplazar la apreciación de los árbitros.
+              En ese sentido, el partido entre Real Madrid y Eintracht Frankfurt, campeones de Europa, marcará el debut de esta herramienta tecnológica destinada a acelerar y fiabilizar las decisiones arbitrales.
+              La tecnología, según NA, permite establecer en todo momento la posición de los jugadores y del balón, facilitando la detención de las jugadas en fuera de juego, sin reemplazar la apreciación de los árbitros.
             </Typography>
           </CardContent>
           <CardActions disableSpacing>

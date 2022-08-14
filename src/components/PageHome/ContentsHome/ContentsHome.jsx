@@ -1,26 +1,34 @@
 import React from 'react'
 import "./ContentsHome.css"
+import Logo from "../../../assets/img/Logo.png"
+import champions from "../../../assets/img/champions.png"
+import libertadores from "../../../assets/img/libertadores.png"
+import futbolInternacional from "../../../assets/img/fifa.png"
+import futbolNacional from "../../../assets/img/futbolNacional.png"
+import { NavLink } from 'react-router-dom'
 
 
 export const ContentsHome = () => {
     return (
-        <><div className='containerHomme'>
+        <>
+        <div className='containerHome'>
             <h1 className='sectionInicio'>Bienvenidos a Footdev  </h1>
+            <div className='containerLogoPageHome'>
+                <img src={Logo} className="logoPageHome" />
+            </div>
             <h3 className="sectionSubtitle"> Para todos los amantes del football les traemos la imformacion  y las mejores noticias de todas las ligas profesionales,
-                ligas internacionales , ligas europeas y ligas locales .. 
+                ligas internacionales , ligas europeas y ligas locales ..
                 Mas una seccion para armar tu equipo</h3>
             <div className="containerIcons">
-                <img className='iconChampions' src='https://assets.stickpng.com/images/5842fe0ea6515b1e0ad75b3c.png' />
-                <img className='iconInternational' src="http://pngimg.com/uploads/fifa/fifa_PNG2.png" />
-                <img className='iconLibertadores' src="https://i.pinimg.com/originals/11/2b/65/112b65d08e4b1ea4a44cd3ea7f532b5a.png" />
-                <img className='iconLocal' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Logo_LPF_AFA.svg/1200px-Logo_LPF_AFA.svg.png" />
-
+                <img className='iconChampions' src={champions}/>
+                <img className='iconLibertadores' src={libertadores} />
+                <img className='iconInternational' src={futbolInternacional}/>
+                <img className='iconLocal' src={futbolNacional} />
             </div>
             <div className="containerButton">
-        <button className="PageButton"> Registrate</button>
+               <NavLink to="/register"><button className="PageButton"> Registrate</button></NavLink>
+            </div>
         </div>
-        </div>
-        
         </>
     )
 }

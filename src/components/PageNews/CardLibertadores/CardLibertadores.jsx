@@ -9,11 +9,13 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
+import { green, red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import AddToHomeScreenIcon from '@mui/icons-material/AddToHomeScreen';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import libertadores from "../../../assets/img/libertadores.png";
+import Logo from "../../../assets/img/Logo.png"
 import "./CardLibertadores.css"
 
 
@@ -37,7 +39,7 @@ export default function CardLibertadores() {
     return (
         <>
             <div className='titleSection'>
-                <img className='iconLibertadores' src="https://i.pinimg.com/originals/11/2b/65/112b65d08e4b1ea4a44cd3ea7f532b5a.png"/>
+                <img className='iconLibertadores' src={libertadores} />
                 <h3 className='sectionLibertadores'>Libertadores</h3>
             </div>
 
@@ -46,24 +48,23 @@ export default function CardLibertadores() {
                 <Card sx={{ maxWidth: 370 }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+                            <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                                <img src={Logo} className="logocard" />
                             </Avatar>
                         }
-                        title="La Champions League más cara!"
-                        subheader="5 de Agosto de 2022"
+                        title="Particular definición de Cacique Medina
+                        "
+                        subheader="14 de Agosto de 2022"
                     />
                     <CardMedia
                         component="img"
-                        height="250"
-                        image="https://img.asmedia.epimg.net/resizer/ARf9txUYhzgyWhxnn-PwiBawrz0=/736x414/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/U2GF23DXQJYOPXRYBBZRQZU264.jpg"
+                        height="260"
+                        image="https://images.ole.com.ar/2022/08/03/l3rdDXEXe_720x0__1.jpg"
                         alt="Paella dish"
                     />
                     <CardContent>
                         <Typography variant="body2" color="black">
-                            Haaland, Lewandowski, Koundé, Darwin, Tchouameni....
-                            los grandes de Europa se refuerzan con fichajes millonarios
-                            en la lucha por conquistar la próxima Champions.
+                            A finales de mayo, Alexander Medina firmó contrato con Vélez para convertirse en el nuevo entrenador del club. Y a dos meses y medio de aquella primera foto oficial, la dirigencia y los hinchas celebran su llegada con el pase a las semifinales de la Copa Libertadores. Tras haber eliminado a River y a Talleres, ahora tendrán un nuevo desafío: Flamengo. Sin embargo, desde el cuerpo técnico aseguran que no es imposible a pesar del Dream Team que tienen los brasileños.
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -118,22 +119,22 @@ export default function CardLibertadores() {
                 <Card sx={{ maxWidth: 370 }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+                            <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                                <img src={Logo} className="logocard" />
                             </Avatar>
                         }
-                        title="Gran victoria del equipo ingles"
-                        subheader="3 de Agosto de 2022"
+                        title="Athletico-PR, semifinalista sobre la hora"
+                        subheader="12 de Agosto de 2022"
                     />
                     <CardMedia
                         component="img"
-                        height="250"
-                        image="https://cdn.futbolperuano.com/sdi/2022/07/31/inglaterra-vencio-a-alemania-y-se-corono-por-primera-vez-como-campeona-de-la-eurocopa-femenina-1053040.jpg"
+                        height="260"
+                        image="https://cmscdnus.yinzcam.com/Toolbox/media/CSF_LIB/000_32GD9BU.jpg?clxf=w_2000%2ch_2000%2cc_limit%2cf_jpg%2cq_90"
                         alt="Paella dish"
                     />
                     <CardContent>
-                        <Typography variant="body2" color="text.secondary">
-                            Eurocopa Femenina 2022: Inglaterra campeona tras ganarle a Alemania, pero la verdadera victoria es del futbol de mujeres. Inglaterra derrotó este domingo a Alemania 2-1 en una histórica final del la Eurocopa Femenina de fútbol que se jugó en el incónico estadio de Wembley en Londres.
+                        <Typography variant="body2" color="black">
+                            Tal como en el duelo de ida en Curitiba, se dio otro partido friccionado, trabajado y luchado en el que los arqueros Bento y Andújar trabajaron para sostener su valla invicta y que se terminó resolviendo en los instantes finales. A los 90+6', los dos jóvenes delanteros brasileños que hizo ingresar el entrenador Luiz Felipe Scolari en el segundo tiempo resolvieron el partido: Vitor Roque conectó un centro de Vitinho desde la derecha y estampó, de cabeza, el 1-0 para sentenciar el pase del Furacão a la próxima ronda.
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -188,22 +189,22 @@ export default function CardLibertadores() {
                 <Card sx={{ maxWidth: 370 }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+                            <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                                <img src={Logo} className="logocard" />
                             </Avatar>
                         }
-                        title="Gran victoria del equipo ingles"
-                        subheader="3 de Agosto de 2022"
+                        title="Palmeiras y Vélez, a Semifinales"
+                        subheader="10 de Agosto de 2022"
                     />
                     <CardMedia
                         component="img"
-                        height="250"
-                        image="https://cdn.futbolperuano.com/sdi/2022/07/31/inglaterra-vencio-a-alemania-y-se-corono-por-primera-vez-como-campeona-de-la-eurocopa-femenina-1053040.jpg"
+                        height="260"
+                        image="https://cmscdnus.yinzcam.com/Toolbox/media/CSF_LIB/tWoRCm2klnthoZ6YPAFicef2D5KacfuxrALHuSMz.jpeg?clxf=w_2000%2ch_2000%2cc_limit%2cf_jpg%2cq_90"
                         alt="Paella dish"
                     />
                     <CardContent>
-                        <Typography variant="body2" color="text.secondary">
-                            Eurocopa Femenina 2022: Inglaterra campeona tras ganarle a Alemania, pero la verdadera victoria es del futbol de mujeres. Inglaterra derrotó este domingo a Alemania 2-1 en una histórica final del la Eurocopa Femenina de fútbol que se jugó en el incónico estadio de Wembley en Londres.
+                        <Typography variant="body2" color="black">
+                            La CONMEBOL Libertadores entra en su etapa decisiva y este miércoles se definieron dos semifinalistas en dos emotivos partidos: Palmeiras y Vélez se metieron entre los 4 mejores del continente. Los bicampeones vigentes derrotaron por penales a Atlético Mineiro tras terminar el partido con 9 hombres, mientras que los argentinos vencieron 1-0 a Talleres, en Córdoba, y avanzaron..
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -257,22 +258,24 @@ export default function CardLibertadores() {
                 <Card sx={{ maxWidth: 370 }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+                            <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                                <img src={Logo} className="logocard" />
                             </Avatar>
                         }
-                        title="Gran victoria del equipo ingles"
-                        subheader="3 de Agosto de 2022"
+                        title="Flamengo, el primer semifinalista"
+                        subheader="9 de Agosto de 2022"
                     />
                     <CardMedia
                         component="img"
                         height="250"
-                        image="https://cdn.futbolperuano.com/sdi/2022/07/31/inglaterra-vencio-a-alemania-y-se-corono-por-primera-vez-como-campeona-de-la-eurocopa-femenina-1053040.jpg"
+                        image="https://cmscdnus.yinzcam.com/Toolbox/media/CSF_LIB/000_32GA84H.jpg?clxf=w_2000%2ch_2000%2cc_limit%2cf_jpg%2cq_90"
                         alt="Paella dish"
                     />
                     <CardContent>
-                        <Typography variant="body2" color="text.secondary">
-                            Eurocopa Femenina 2022: Inglaterra campeona tras ganarle a Alemania, pero la verdadera victoria es del futbol de mujeres. Inglaterra derrotó este domingo a Alemania 2-1 en una histórica final del la Eurocopa Femenina de fútbol que se jugó en el incónico estadio de Wembley en Londres.
+                        <Typography variant="body2" color="black">
+                            Flamengo es el primer semifinalista de la CONMEBOL Libertadores tras vencer por 1-0 a Corinthians en el Maracaná, con gol de Pedro en el segundo tiempo. El equipo de Río de Janeiro selló la serie con un 3-0 global luego de haber ganado 2-0 en la ida en San Pablo.
+                            Flamengo espera rival para ir en buscar de su tercera final en 4 años. Se medirá al ganador de la serie, que este miércoles definirán Vélez y Talleres, luego de la victoria 3-2 del equipo de Liniers en la ida como local.
+                            Flamengo, campeón en 2019 y finalista en 2021, jugará su tercera semifinal en los últimos 4 años.
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>

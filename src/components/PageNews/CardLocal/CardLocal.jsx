@@ -9,11 +9,13 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
+import { green, red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import AddToHomeScreenIcon from '@mui/icons-material/AddToHomeScreen';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Logo from "../../../assets/img/Logo.png"
+import futbolNacional from "../../../assets/img/futbolNacional.png"
 import "./CardLocal.css"
 
 
@@ -37,7 +39,7 @@ export default function CardLocal() {
     return (
         <>
             <div className='titleSection'>
-                <img className='iconLocal' src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Logo_LPF_AFA.svg/1200px-Logo_LPF_AFA.svg.png"/>
+                <img className='iconLocal' src={futbolNacional} />
                 <h3 className='sectionLocal'>Futbol local</h3>
             </div>
 
@@ -46,24 +48,22 @@ export default function CardLocal() {
                 <Card sx={{ maxWidth: 370 }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+                            <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                                <img src={Logo} className="logocard" />
                             </Avatar>
                         }
-                        title="La Champions League más cara!"
-                        subheader="5 de Agosto de 2022"
+                        title="¿Por qué Solari festeja los goles asi?"
+                        subheader="12 de Agosto de 2022"
                     />
                     <CardMedia
                         component="img"
-                        height="250"
-                        image="https://img.asmedia.epimg.net/resizer/ARf9txUYhzgyWhxnn-PwiBawrz0=/736x414/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/U2GF23DXQJYOPXRYBBZRQZU264.jpg"
+                        height="260"
+                        image="https://images.ole.com.ar/2022/08/13/R4l79w77f_1256x620__1.jpg"
                         alt="Paella dish"
                     />
                     <CardContent>
                         <Typography variant="body2" color="black">
-                            Haaland, Lewandowski, Koundé, Darwin, Tchouameni....
-                            los grandes de Europa se refuerzan con fichajes millonarios
-                            en la lucha por conquistar la próxima Champions.
+                            Como hizo en más de una ocasión en Colo-Colo (convirtió 10 tantos), Solari le dedicó los gritos de gol a su abuelo materno, Feliciano, de extensa carrera militar. El jugador de 21 años lo llegó a conocer por poco, ya que falleció cuando él era muy chico, pero nunca dejaron de contarle cosas. De grande, y ante un Monumental repleto, lo sigue homenajeando.
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -118,22 +118,22 @@ export default function CardLocal() {
                 <Card sx={{ maxWidth: 370 }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+                            <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                                <img src={Logo} className="logocard" />
                             </Avatar>
                         }
-                        title="Gran victoria del equipo ingles"
+                        title="Benedetto podria juagar de titular"
                         subheader="3 de Agosto de 2022"
                     />
                     <CardMedia
                         component="img"
-                        height="250"
-                        image="https://cdn.futbolperuano.com/sdi/2022/07/31/inglaterra-vencio-a-alemania-y-se-corono-por-primera-vez-como-campeona-de-la-eurocopa-femenina-1053040.jpg"
+                        height="260"
+                        image="https://images.ole.com.ar/2022/08/13/lywH8CKCC_1256x620__2.jpg#1660406633757"
                         alt="Paella dish"
                     />
                     <CardContent>
                         <Typography variant="body2" color="text.secondary">
-                            Eurocopa Femenina 2022: Inglaterra campeona tras ganarle a Alemania, pero la verdadera victoria es del futbol de mujeres. Inglaterra derrotó este domingo a Alemania 2-1 en una histórica final del la Eurocopa Femenina de fútbol que se jugó en el incónico estadio de Wembley en Londres.
+                            Es como si el tiempo se hubiera detenido para Darío Benedetto después de lo que vivió ante Corinthians y Talleres con la polémica arenga, los tres penales fallados y la eliminación de Boca de la Copa Libertadores. Una lesión en un tobillo lo tuvo a maltraer y nunca le permitió dejar atrás todo eso dentro de la cancha.
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -188,22 +188,22 @@ export default function CardLocal() {
                 <Card sx={{ maxWidth: 370 }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+                            <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                                <img src={Logo} className="logocard" />
                             </Avatar>
                         }
-                        title="Gran victoria del equipo ingles"
-                        subheader="3 de Agosto de 2022"
+                        title="Adonis Frías por su frustrado pase a Boca"
+                        subheader="8 de Agosto de 2022"
                     />
                     <CardMedia
                         component="img"
-                        height="250"
-                        image="https://cdn.futbolperuano.com/sdi/2022/07/31/inglaterra-vencio-a-alemania-y-se-corono-por-primera-vez-como-campeona-de-la-eurocopa-femenina-1053040.jpg"
+                        height="260"
+                        image="https://media.tycsports.com/files/2022/07/25/457003/adonis-frias_862x485.webp"
                         alt="Paella dish"
                     />
                     <CardContent>
                         <Typography variant="body2" color="text.secondary">
-                            Eurocopa Femenina 2022: Inglaterra campeona tras ganarle a Alemania, pero la verdadera victoria es del futbol de mujeres. Inglaterra derrotó este domingo a Alemania 2-1 en una histórica final del la Eurocopa Femenina de fútbol que se jugó en el incónico estadio de Wembley en Londres.
+                            Tengo mucha bronca, estoy esperando que alguien me dé una explicación de lo que pasó”, fue la contundente frase que soltó el zaguero de 24 años, que en reiteradas ocasiones ya había dejado en claro que es hincha del conjunto de La Ribera y su deseo es jugar allí.
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
@@ -257,22 +257,22 @@ export default function CardLocal() {
                 <Card sx={{ maxWidth: 370 }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3MlVNk4jW-9SjkBc6SPnNUG3S0p5DHF2vMUiag4AkDTphtF9jOWbmYglkiTW2oCw7E3R_xz5UQo82ODsU1r-1EhUwl9oBbreMd99bS_wUvwO1cDtCeUZWYHFY8PwfFgolkSayBwz-hF4zhZiO7gnOOvvn3T2lLcTIcuwGp4aTDlCmgRaGthG2cxCvrw/s633/Al%20Rihla.png' width={"50px"} />
+                            <Avatar sx={{ bgcolor: green[500] }} aria-label="recipe">
+                                <img src={Logo} className="logocard" />
                             </Avatar>
                         }
                         title="Gran victoria del equipo ingles"
-                        subheader="3 de Agosto de 2022"
+                        subheader="13 de Agosto de 2022"
                     />
                     <CardMedia
                         component="img"
-                        height="250"
-                        image="https://cdn.futbolperuano.com/sdi/2022/07/31/inglaterra-vencio-a-alemania-y-se-corono-por-primera-vez-como-campeona-de-la-eurocopa-femenina-1053040.jpg"
+                        height="260"
+                        image="https://media.tycsports.com/files/2022/08/12/464477/zarate-apunto-a-un-hincha-de-platense_416x234.webp"
                         alt="Paella dish"
                     />
                     <CardContent>
                         <Typography variant="body2" color="text.secondary">
-                            Eurocopa Femenina 2022: Inglaterra campeona tras ganarle a Alemania, pero la verdadera victoria es del futbol de mujeres. Inglaterra derrotó este domingo a Alemania 2-1 en una histórica final del la Eurocopa Femenina de fútbol que se jugó en el incónico estadio de Wembley en Londres.
+                        Zárate, de penal, fue el encargado de poner el 1-1 transitorio de Platense ante Banfield y en vez de festejar, el delantero corrió directo a buscar a un hincha del Calamar. Pero no quedó ahí, debido a que después del segundo tanto, que hizo Jorge Benítez, volvió a dedicarle el tanto al simpatizante.
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>
